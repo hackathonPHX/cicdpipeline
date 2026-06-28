@@ -1,4 +1,4 @@
-FROM maven:3.8.3-amazoncorretto-17 AS build
+FROM eclipse-temurin:21 AS build
 WORKDIR /app
 COPY pom.xml /app
 RUN mvn dependency:resolve
