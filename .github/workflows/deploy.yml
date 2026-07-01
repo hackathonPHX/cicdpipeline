@@ -42,7 +42,7 @@ jobs:
         key: ${{ secrets.EC2_SSH_KEY }}
         script: |
           docker stop spring-demo
-          delete rm spring-demo
+          docker rm spring-demo
           docker pull ${{secrets.DOCKERHUB_USERNAME}}/spring-boot-ci-demo:latest
           docker run -d --name spring-demo -p 8080:8080 ${{secrets.DOCKERHUB_USERNAME}}/spring-boot-ci-demo:latest
           
