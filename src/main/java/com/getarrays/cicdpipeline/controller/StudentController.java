@@ -10,6 +10,6 @@ public class StudentController {
 	
 	@GetMapping("/getResponse")
 	public String getResponse() {
-		return "Hello World!! Welcome to cicd pipeline. Automation..... Test 123";
+		return "Hello World!! Welcome to cicd pipeline. Automation..... Test 123, Continous deployment";
 	}
 }
